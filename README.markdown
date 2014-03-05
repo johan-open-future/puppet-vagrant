@@ -13,13 +13,14 @@
 
 ##Overview
 
-A one-maybe-two sentence summary of what the module does/what problem it solves. This is your 30 second elevator pitch for your module. Consider including OS/Puppet version it works with.       
+This module manage the  system wide installation of vagrant from a package, which are available from the [Vagrant website] (http://www.vagrantup.com/downloads.html). It also handles  one or more Vagrantfiles in your users hoome directories.
 
 ##Module Description
 
-If applicable, this section should have a brief description of the technology the module integrates with and what that integration enables. This section should answer the questions: "What does this module *do*?" and "Why would I use it?"
+The vagrant packages will be installed in a system wide location, mostly somewhere in /opt/vagrant.
 
-If your module has a range of functionality (installation, configuration, management, etc.) this is the time to mention it.
+One can install different vagrant plugins, and or multiple vagrant files in some of your users home directories  to provide a per user suited vagrant environment.
+
 
 ##Setup
 
