@@ -7,11 +7,9 @@ class vagrant::params {
   case $::osfamily {
     'Debian': {
       $package_name = 'vagrant'
-      $service_name = 'vagrant'
     }
-    'RedHat', 'Amazon': {
+    'RedHat': {
       $package_name = 'vagrant'
-      $service_name = 'vagrant'
     }
     default: {
       fail("${::operatingsystem} not supported")

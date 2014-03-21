@@ -14,9 +14,7 @@ describe 'vagrant' do
         it { should contain_class('vagrant::params') }
         it { should contain_class('vagrant::install').that_comes_before('vagrant::config') }
         it { should contain_class('vagrant::config') }
-        it { should contain_class('vagrant::service').that_subscribes_to('vagrant::config') }
 
-        it { should contain_service('vagrant') }
         it { should contain_package('vagrant').with_ensure('present') }
       end
     end

@@ -21,6 +21,9 @@ The vagrant packages will be installed in a system wide location, mostly somewhe
 
 One can install different vagrant plugins, and or multiple vagrant files in some of your users home directories  to provide a per user suited vagrant environment.
 
+Site specific supported vagrant can be defined using your hiera setup.
+A list of available vagrant files can be found [here]
+
 
 ##Setup
 

@@ -9,13 +9,11 @@
 #
 class vagrant (
   $package_name = $vagrant::params::package_name,
-  $service_name = $vagrant::params::service_name,
 ) inherits vagrant::params {
 
   # validate parameters here
 
   class { 'vagrant::install': } ->
   class { 'vagrant::config': } ~>
-  class { 'vagrant::service': } ->
   Class['vagrant']
 }
